@@ -1,0 +1,35 @@
+useDynLib("puma")
+import(mclust)
+import(methods)
+import(annotate)
+
+importMethodsFrom(affy,barplot, boxplot,cdfName, hist)
+
+importFrom(affy, AllButCelsForReadAffy, cleancdfname, read.probematrix,
+           ReadAffy, rma)
+
+importClassesFrom(Biobase, AnnotatedDataFrame, AssayData, eSet, ExpressionSet,
+                  MIAME, Versioned, VersionedBiobase, Versions)
+
+importMethodsFrom(Biobase, "annotation<-", "description<-", exprs, "exprs<-",
+                  featureNames, notes, "notes<-", pData, phenoData,
+                  "phenoData<-", sampleNames, se.exprs, "se.exprs<-", varLabels)
+
+importFrom(Biobase, assayDataElement, "assayDataElement<-")
+
+importFrom("grDevices", "dev.off", "pdf", "xy.coords")
+importFrom("graphics", "abline", "arrows", "axis", "box", "legend",
+		"par", "plot", "points", "rect", "segments", "strheight",
+		"strwidth", "text", "title", "xinch", "yinch")
+importFrom("stats", "cov", "dist", "kmeans", "median", "model.matrix",
+		"optim", "optimise", "pnorm", "prcomp", "qnorm", "rnorm",
+		"t.test", "var")
+importFrom("utils", "data", "read.csv", "read.table", "write.table")
+
+importMethodsFrom(oligo, mm, "mm<-",
+                  pm, "pm<-", pmindex, probeNames)
+importFrom(oligo, read.celfiles)              
+import(affyio)
+import(oligoClasses)
+##export everything that does not start with a .
+exportPattern("^[^\\.]")

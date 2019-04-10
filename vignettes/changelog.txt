@@ -1,0 +1,46 @@
+11 March 2014: puma 3.5.2
+
+1. Addition of gmhta and igmoExon functions
+2. Parallelization function gmhta and gmoExon and igmoExon
+3. Changed the way of calculate gene and transcript values. The original calculates in R ,and now is in C
+
+01 July 2007: puma 1.2.1
+
+A major revision of puma. Includes the following changes:
+1. Addition of a DEResults class and associated methods
+2. Changed the default normalisation in mmgmos from "none" to "median"
+3. Added methods for writing results to text files
+4. Addition of calculateFC and calculateTtest functions
+5. Addition of calcAUC and numFP functions
+6. createContrastMatrix modified to additionally create "X vs other contrasts" for factors with 3 or more levels
+7. removeUninformativeFactors function created to overcome problems with troublesome data sets
+
+See SVN for more details
+
+27 April 2007: puma 1.2.0
+
+First version available from Bioconductor. Note this is actually the same version as 1.2.0 - I didn't quite understand the Bioconductor numbering update!
+
+30 March 2007: puma 1.0.0
+
+First version uploaded to Bioconductor
+
+08 January 2007: puma 0.0.3
+
+Version first tested with R 2.5.0
+
+04 January 2007: puma 0.0.2
+
+An updated version, to be used for beta testing was created.
+
+12 October 2006: puma 0.0.1
+
+The first version of the puma package was created, with a view to becoming part
+of the Bioconductor project.
+
+PRE-HISTORY
+
+Parts of the puma package were originally created by Xuejun Liu as the following
+separate R packages: mmgmos, pplr, pumaclust, as well as Matlab code (by Guido
+Sanguinetti) for NPPCA. This legacy code is still available from the project
+website http://umber.sbs.man.ac.uk/resources/puma/.
